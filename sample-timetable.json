@@ -1,0 +1,868 @@
+{
+  "schemaVersion": 1,
+  "settings": {
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    "periods": [
+      {
+        "id": "p1",
+        "label": "P1",
+        "start": "08:00",
+        "end": "08:45",
+        "isBreak": false
+      },
+      {
+        "id": "p2",
+        "label": "P2",
+        "start": "08:50",
+        "end": "09:35",
+        "isBreak": false
+      },
+      {
+        "id": "p3",
+        "label": "P3",
+        "start": "09:40",
+        "end": "10:25",
+        "isBreak": false
+      },
+      {
+        "id": "p4",
+        "label": "P4",
+        "start": "10:40",
+        "end": "11:25",
+        "isBreak": false
+      },
+      {
+        "id": "p5",
+        "label": "P5",
+        "start": "11:30",
+        "end": "12:15",
+        "isBreak": false
+      },
+      {
+        "id": "p6",
+        "label": "P6",
+        "start": "13:00",
+        "end": "13:45",
+        "isBreak": false
+      },
+      {
+        "id": "p7",
+        "label": "P7",
+        "start": "13:50",
+        "end": "14:35",
+        "isBreak": false
+      },
+      {
+        "id": "p8",
+        "label": "P8",
+        "start": "14:40",
+        "end": "15:25",
+        "isBreak": false
+      }
+    ],
+    "mode": "weekly",
+    "dayStartTime": "08:00",
+    "dayEndTime": "15:25",
+    "periodCount": 8,
+    "breaks": [
+      {
+        "id": "br1",
+        "name": "Short Break",
+        "type": "break",
+        "startTime": "10:25",
+        "endTime": "10:40"
+      },
+      {
+        "id": "br2",
+        "name": "Lunch",
+        "type": "break",
+        "startTime": "12:15",
+        "endTime": "13:00"
+      }
+    ]
+  },
+  "entities": {
+    "teachers": [
+      { "id": "t_math_01", "name": "Amy Rao", "color": "#ffcb28" },
+      { "id": "t_math_02", "name": "Kabir Sen", "color": "#f0b700" },
+      { "id": "t_eng_01", "name": "Liam Cole", "color": "#0db660" },
+      { "id": "t_eng_02", "name": "Nora Shaw", "color": "#0a9a54" },
+      { "id": "t_sci_01", "name": "Noah Green", "color": "#54f59a" },
+      { "id": "t_sci_02", "name": "Zoya Khan", "color": "#2fd07b" },
+      { "id": "t_hist_01", "name": "Ivy Lane", "color": "#91a7b3" },
+      { "id": "t_geo_01", "name": "Omar Das", "color": "#7aa2ff" },
+      { "id": "t_cs_01", "name": "Arjun Mehta", "color": "#00d1ff" },
+      { "id": "t_pe_01", "name": "Mia Reed", "color": "#54f59a" },
+      { "id": "t_art_01", "name": "Kiara Paul", "color": "#ffa7f3" },
+      { "id": "t_mus_01", "name": "Theo Cruz", "color": "#ff9d4d" },
+      { "id": "t_lang_01", "name": "Elena Park", "color": "#7aa2ff" },
+      { "id": "t_econ_01", "name": "Ria Bose", "color": "#ff6b6b" },
+      { "id": "t_phy_01", "name": "Dev Iyer", "color": "#f6c945" },
+      { "id": "t_chem_01", "name": "Sara Ali", "color": "#54f59a" }
+    ],
+    "classes": [
+      { "id": "c8a", "name": "Class 8A", "color": "#00d1ff" },
+      { "id": "c8b", "name": "Class 8B", "color": "#f6c945" },
+      { "id": "c9a", "name": "Class 9A", "color": "#54f59a" },
+      { "id": "c10a", "name": "Class 10A", "color": "#7aa2ff" },
+      { "id": "c11s", "name": "Class 11 Science", "color": "#ff9d4d" }
+    ],
+    "rooms": [
+      { "id": "r101", "name": "Room 101", "color": "#00d1ff" },
+      { "id": "r102", "name": "Room 102", "color": "#f6c945" },
+      { "id": "r103", "name": "Room 103", "color": "#54f59a" },
+      { "id": "r104", "name": "Room 104", "color": "#7aa2ff" },
+      { "id": "r105", "name": "Room 105", "color": "#ff9d4d" },
+      { "id": "lab_sci", "name": "Science Lab", "color": "#54f59a" },
+      { "id": "lab_cs", "name": "Computer Lab", "color": "#00d1ff" },
+      { "id": "gym", "name": "Gym", "color": "#91a7b3" },
+      { "id": "art_studio", "name": "Art Studio", "color": "#ffa7f3" },
+      { "id": "music_room", "name": "Music Room", "color": "#ff9d4d" }
+    ],
+    "subjects": [
+      { "id": "s_math", "name": "Math", "color": "#ffcb28" },
+      { "id": "s_english", "name": "English", "color": "#0db660" },
+      { "id": "s_science", "name": "Science", "color": "#54f59a" },
+      { "id": "s_history", "name": "History", "color": "#91a7b3" },
+      { "id": "s_geography", "name": "Geography", "color": "#7aa2ff" },
+      { "id": "s_cs", "name": "Computer Science", "color": "#00d1ff" },
+      { "id": "s_pe", "name": "PE", "color": "#54f59a" },
+      { "id": "s_art", "name": "Art", "color": "#ffa7f3" },
+      { "id": "s_music", "name": "Music", "color": "#ff9d4d" },
+      { "id": "s_language", "name": "2nd Language", "color": "#7aa2ff" },
+      { "id": "s_econ", "name": "Economics", "color": "#ff6b6b" },
+      { "id": "s_physics", "name": "Physics", "color": "#f6c945" },
+      { "id": "s_chemistry", "name": "Chemistry", "color": "#54f59a" }
+    ]
+  },
+  "slots": {
+    "Mon|p1|c8a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r101"
+    },
+    "Mon|p1|c8b": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r101"
+    },
+    "Mon|p1|c9a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r103"
+    },
+    "Mon|p1|c10a": {
+      "subjectId": "s_physics",
+      "teacherId": "t_phy_01",
+      "roomId": "lab_sci"
+    },
+    "Mon|p1|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Mon|p2|c8a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r101"
+    },
+    "Mon|p2|c8b": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Mon|p2|c9a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r103"
+    },
+    "Mon|p2|c10a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r104"
+    },
+    "Mon|p2|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    },
+
+    "Mon|p3|c8a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Mon|p3|c8b": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r102"
+    },
+    "Mon|p3|c9a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r103"
+    },
+    "Mon|p3|c10a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r104"
+    },
+    "Mon|p3|c11s": {
+      "subjectId": "s_physics",
+      "teacherId": "t_phy_01",
+      "roomId": "lab_sci"
+    },
+
+    "Mon|p4|c8a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r101"
+    },
+    "Mon|p4|c8b": {
+      "subjectId": "s_geography",
+      "teacherId": "t_geo_01",
+      "roomId": "r102"
+    },
+    "Mon|p4|c9a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Mon|p4|c10a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_02",
+      "roomId": "lab_sci"
+    },
+    "Mon|p4|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Mon|p5|c8a": {
+      "subjectId": "s_language",
+      "teacherId": "t_lang_01",
+      "roomId": "r101"
+    },
+    "Mon|p5|c8b": {
+      "subjectId": "s_art",
+      "teacherId": "t_art_01",
+      "roomId": "art_studio"
+    },
+    "Mon|p5|c9a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r103"
+    },
+    "Mon|p5|c10a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r104"
+    },
+    "Mon|p5|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    },
+
+    "Mon|p6|c8a": {
+      "subjectId": "s_pe",
+      "teacherId": "t_pe_01",
+      "roomId": "gym"
+    },
+    "Mon|p6|c8b": {
+      "subjectId": "s_music",
+      "teacherId": "t_mus_01",
+      "roomId": "music_room"
+    },
+    "Mon|p6|c9a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r103"
+    },
+    "Mon|p6|c10a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Mon|p6|c11s": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r105"
+    },
+
+    "Tue|p1|c8a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r101"
+    },
+    "Tue|p1|c8b": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r102"
+    },
+    "Tue|p1|c9a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_02",
+      "roomId": "lab_sci"
+    },
+    "Tue|p1|c10a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r104"
+    },
+    "Tue|p1|c11s": {
+      "subjectId": "s_physics",
+      "teacherId": "t_phy_01",
+      "roomId": "lab_sci"
+    },
+
+    "Tue|p2|c8a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r101"
+    },
+    "Tue|p2|c8b": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Tue|p2|c9a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r103"
+    },
+    "Tue|p2|c10a": {
+      "subjectId": "s_geography",
+      "teacherId": "t_geo_01",
+      "roomId": "r104"
+    },
+    "Tue|p2|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Tue|p3|c8a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r101"
+    },
+    "Tue|p3|c8b": {
+      "subjectId": "s_art",
+      "teacherId": "t_art_01",
+      "roomId": "art_studio"
+    },
+    "Tue|p3|c9a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r103"
+    },
+    "Tue|p3|c10a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Tue|p3|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    },
+
+    "Tue|p4|c8a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Tue|p4|c8b": {
+      "subjectId": "s_geography",
+      "teacherId": "t_geo_01",
+      "roomId": "r102"
+    },
+    "Tue|p4|c9a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r103"
+    },
+    "Tue|p4|c10a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r104"
+    },
+    "Tue|p4|c11s": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r105"
+    },
+
+    "Tue|p5|c8a": {
+      "subjectId": "s_language",
+      "teacherId": "t_lang_01",
+      "roomId": "r101"
+    },
+    "Tue|p5|c8b": {
+      "subjectId": "s_music",
+      "teacherId": "t_mus_01",
+      "roomId": "music_room"
+    },
+    "Tue|p5|c9a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r103"
+    },
+    "Tue|p5|c10a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_02",
+      "roomId": "lab_sci"
+    },
+    "Tue|p5|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Tue|p6|c8a": {
+      "subjectId": "s_pe",
+      "teacherId": "t_pe_01",
+      "roomId": "gym"
+    },
+    "Tue|p6|c8b": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r102"
+    },
+    "Tue|p6|c9a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Tue|p6|c10a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r104"
+    },
+    "Tue|p6|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    },
+
+    "Wed|p1|c8a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r101"
+    },
+    "Wed|p1|c8b": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Wed|p1|c9a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r103"
+    },
+    "Wed|p1|c10a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r104"
+    },
+    "Wed|p1|c11s": {
+      "subjectId": "s_physics",
+      "teacherId": "t_phy_01",
+      "roomId": "lab_sci"
+    },
+
+    "Wed|p2|c8a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r101"
+    },
+    "Wed|p2|c8b": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r102"
+    },
+    "Wed|p2|c9a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_02",
+      "roomId": "lab_sci"
+    },
+    "Wed|p2|c10a": {
+      "subjectId": "s_geography",
+      "teacherId": "t_geo_01",
+      "roomId": "r104"
+    },
+    "Wed|p2|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Wed|p3|c8a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Wed|p3|c8b": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r102"
+    },
+    "Wed|p3|c9a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r103"
+    },
+    "Wed|p3|c10a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r104"
+    },
+    "Wed|p3|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    },
+
+    "Wed|p4|c8a": {
+      "subjectId": "s_language",
+      "teacherId": "t_lang_01",
+      "roomId": "r101"
+    },
+    "Wed|p4|c8b": {
+      "subjectId": "s_art",
+      "teacherId": "t_art_01",
+      "roomId": "art_studio"
+    },
+    "Wed|p4|c9a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r103"
+    },
+    "Wed|p4|c10a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_02",
+      "roomId": "lab_sci"
+    },
+    "Wed|p4|c11s": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r105"
+    },
+
+    "Wed|p5|c8a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r101"
+    },
+    "Wed|p5|c8b": {
+      "subjectId": "s_geography",
+      "teacherId": "t_geo_01",
+      "roomId": "r102"
+    },
+    "Wed|p5|c9a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r103"
+    },
+    "Wed|p5|c10a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Wed|p5|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Wed|p6|c8a": {
+      "subjectId": "s_pe",
+      "teacherId": "t_pe_01",
+      "roomId": "gym"
+    },
+    "Wed|p6|c8b": {
+      "subjectId": "s_music",
+      "teacherId": "t_mus_01",
+      "roomId": "music_room"
+    },
+    "Wed|p6|c9a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Wed|p6|c10a": {
+      "subjectId": "s_history",
+      "teacherId": "t_hist_01",
+      "roomId": "r104"
+    },
+    "Wed|p6|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    },
+
+    "Thu|p1|c8a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r101"
+    },
+    "Thu|p1|c8b": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r102"
+    },
+    "Thu|p1|c9a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_02",
+      "roomId": "lab_sci"
+    },
+    "Thu|p1|c10a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_01",
+      "roomId": "r104"
+    },
+    "Thu|p1|c11s": {
+      "subjectId": "s_physics",
+      "teacherId": "t_phy_01",
+      "roomId": "lab_sci"
+    },
+
+    "Fri|p1|c8a": {
+      "subjectId": "s_math",
+      "teacherId": "t_math_02",
+      "roomId": "r101"
+    },
+    "Fri|p1|c8b": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_02",
+      "roomId": "r102"
+    },
+    "Fri|p1|c9a": {
+      "subjectId": "s_science",
+      "teacherId": "t_sci_01",
+      "roomId": "lab_sci"
+    },
+    "Fri|p1|c10a": {
+      "subjectId": "s_english",
+      "teacherId": "t_eng_01",
+      "roomId": "r104"
+    },
+    "Fri|p1|c11s": {
+      "subjectId": "s_chemistry",
+      "teacherId": "t_chem_01",
+      "roomId": "lab_sci"
+    },
+
+    "Fri|p7|c10a": {
+      "subjectId": "s_cs",
+      "teacherId": "t_cs_01",
+      "roomId": "lab_cs"
+    },
+    "Fri|p8|c11s": {
+      "subjectId": "s_econ",
+      "teacherId": "t_econ_01",
+      "roomId": "r105"
+    }
+  },
+  "requirements": [
+    {
+      "id": "req_8a_math",
+      "classId": "c8a",
+      "subjectId": "s_math",
+      "periodsPerCycle": 6,
+      "allowedTeacherIds": ["t_math_01", "t_math_02"],
+      "preferredRoomId": "r101"
+    },
+    {
+      "id": "req_8a_eng",
+      "classId": "c8a",
+      "subjectId": "s_english",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_eng_01", "t_eng_02"],
+      "preferredRoomId": "r101"
+    },
+    {
+      "id": "req_8a_sci",
+      "classId": "c8a",
+      "subjectId": "s_science",
+      "periodsPerCycle": 4,
+      "allowedTeacherIds": ["t_sci_01", "t_sci_02"],
+      "preferredRoomId": "lab_sci"
+    },
+    {
+      "id": "req_8a_hist",
+      "classId": "c8a",
+      "subjectId": "s_history",
+      "periodsPerCycle": 3,
+      "allowedTeacherIds": ["t_hist_01"]
+    },
+
+    {
+      "id": "req_8b_math",
+      "classId": "c8b",
+      "subjectId": "s_math",
+      "periodsPerCycle": 6,
+      "allowedTeacherIds": ["t_math_01", "t_math_02"],
+      "preferredRoomId": "r102"
+    },
+    {
+      "id": "req_8b_eng",
+      "classId": "c8b",
+      "subjectId": "s_english",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_eng_01", "t_eng_02"],
+      "preferredRoomId": "r102"
+    },
+    {
+      "id": "req_8b_sci",
+      "classId": "c8b",
+      "subjectId": "s_science",
+      "periodsPerCycle": 4,
+      "allowedTeacherIds": ["t_sci_01", "t_sci_02"],
+      "preferredRoomId": "lab_sci"
+    },
+    {
+      "id": "req_8b_geo",
+      "classId": "c8b",
+      "subjectId": "s_geography",
+      "periodsPerCycle": 3,
+      "allowedTeacherIds": ["t_geo_01"]
+    },
+
+    {
+      "id": "req_9a_math",
+      "classId": "c9a",
+      "subjectId": "s_math",
+      "periodsPerCycle": 6,
+      "allowedTeacherIds": ["t_math_02"],
+      "preferredRoomId": "r103"
+    },
+    {
+      "id": "req_9a_eng",
+      "classId": "c9a",
+      "subjectId": "s_english",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_eng_01", "t_eng_02"],
+      "preferredRoomId": "r103"
+    },
+    {
+      "id": "req_9a_sci",
+      "classId": "c9a",
+      "subjectId": "s_science",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_sci_01", "t_sci_02"],
+      "preferredRoomId": "lab_sci"
+    },
+    {
+      "id": "req_9a_cs",
+      "classId": "c9a",
+      "subjectId": "s_cs",
+      "periodsPerCycle": 3,
+      "allowedTeacherIds": ["t_cs_01"],
+      "preferredRoomId": "lab_cs"
+    },
+
+    {
+      "id": "req_10a_math",
+      "classId": "c10a",
+      "subjectId": "s_math",
+      "periodsPerCycle": 6,
+      "allowedTeacherIds": ["t_math_01", "t_math_02"],
+      "preferredRoomId": "r104"
+    },
+    {
+      "id": "req_10a_eng",
+      "classId": "c10a",
+      "subjectId": "s_english",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_eng_01", "t_eng_02"],
+      "preferredRoomId": "r104"
+    },
+    {
+      "id": "req_10a_sci",
+      "classId": "c10a",
+      "subjectId": "s_science",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_sci_02"],
+      "preferredRoomId": "lab_sci"
+    },
+    {
+      "id": "req_10a_hist",
+      "classId": "c10a",
+      "subjectId": "s_history",
+      "periodsPerCycle": 3,
+      "allowedTeacherIds": ["t_hist_01"]
+    },
+
+    {
+      "id": "req_11s_phy",
+      "classId": "c11s",
+      "subjectId": "s_physics",
+      "periodsPerCycle": 6,
+      "allowedTeacherIds": ["t_phy_01"],
+      "preferredRoomId": "lab_sci"
+    },
+    {
+      "id": "req_11s_chem",
+      "classId": "c11s",
+      "subjectId": "s_chemistry",
+      "periodsPerCycle": 6,
+      "allowedTeacherIds": ["t_chem_01"],
+      "preferredRoomId": "lab_sci"
+    },
+    {
+      "id": "req_11s_math",
+      "classId": "c11s",
+      "subjectId": "s_math",
+      "periodsPerCycle": 5,
+      "allowedTeacherIds": ["t_math_01", "t_math_02"],
+      "preferredRoomId": "r105"
+    },
+    {
+      "id": "req_11s_econ",
+      "classId": "c11s",
+      "subjectId": "s_econ",
+      "periodsPerCycle": 4,
+      "allowedTeacherIds": ["t_econ_01"],
+      "preferredRoomId": "r105"
+    }
+  ],
+  "teacherBlocked": {
+    "t_math_01": ["Mon|p1", "Thu|p6"],
+    "t_eng_01": ["Fri|p8"],
+    "t_sci_01": ["Tue|p6"],
+    "t_cs_01": ["Mon|p8", "Wed|p8"],
+    "t_pe_01": ["Fri|p1"],
+    "t_phy_01": ["Fri|p6"],
+    "t_chem_01": ["Thu|p8"]
+  },
+  "teacherSubjectMap": {
+    "t_math_01": ["s_math"],
+    "t_math_02": ["s_math"],
+    "t_eng_01": ["s_english"],
+    "t_eng_02": ["s_english"],
+    "t_sci_01": ["s_science"],
+    "t_sci_02": ["s_science"],
+    "t_hist_01": ["s_history"],
+    "t_geo_01": ["s_geography"],
+    "t_cs_01": ["s_cs"],
+    "t_pe_01": ["s_pe"],
+    "t_art_01": ["s_art"],
+    "t_mus_01": ["s_music"],
+    "t_lang_01": ["s_language"],
+    "t_econ_01": ["s_econ"],
+    "t_phy_01": ["s_physics"],
+    "t_chem_01": ["s_chemistry"]
+  },
+  "ui": {
+    "selectedDay": "Mon",
+    "viewMode": "whole",
+    "selectedEntityId": "c8a",
+    "zoom": 1,
+    "showConflictsOnly": false,
+    "themePreference": "dark"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "timetable-server",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "echo \"server build complete\"",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
