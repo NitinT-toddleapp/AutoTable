@@ -1,4 +1,4 @@
-# Noir Timetable (React + Node)
+# AutoTable (React + Node)
 
 Premium dark timetable builder V1 with offline browser persistence.
 
